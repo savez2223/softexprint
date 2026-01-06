@@ -22,7 +22,7 @@ const Header = () => {
             <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-card group-hover:shadow-hover transition-shadow duration-300">
               <Printer className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-bold text-xl text-foreground">PrinterHelp</span>
+            <span className="font-bold text-xl text-foreground">Softexprint</span>
           </a>
 
           {/* Desktop Navigation */}
