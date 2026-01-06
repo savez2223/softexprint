@@ -8,36 +8,36 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "How do I find the right driver for my printer?",
-      answer: "Visit your printer manufacturer's official website, go to the Support or Downloads section, enter your printer model number, select your operating system, and download the latest driver. Make sure to download from official sources only to avoid malware.",
+      question: "How do I find the correct driver for my printer model?",
+      answer: "Visit your printer manufacturer's official website and navigate to the Downloads or Drivers section. Enter your exact printer model number, select your operating system (Windows 10/11, macOS, Linux), and download the recommended driver package. Always download from official sources to ensure security and compatibility.",
     },
     {
-      question: "Can I connect my printer to multiple computers?",
-      answer: "Yes! Wireless printers can be connected to multiple computers on the same network. Simply install the drivers on each computer and add the printer through Settings. For USB printers, you can use a print server or share the printer through network sharing settings.",
+      question: "Can I connect one printer to multiple computers?",
+      answer: "Yes, you can connect a single printer to multiple computers. Wireless printers can be accessed by any computer on the same WiFi network - simply install the drivers on each computer and add the printer through system settings. For USB printers, you can share the printer through your network settings or use a print server device.",
     },
     {
-      question: "What's the difference between USB and Wireless setup?",
-      answer: "USB setup involves connecting the printer directly to your computer with a cable - it's reliable and fast but limits mobility. Wireless setup connects via WiFi, allowing printing from anywhere in your home/office and from multiple devices, but requires a stable WiFi network.",
+      question: "What is the difference between USB and wireless printer setup?",
+      answer: "USB setup requires a physical cable connecting your printer directly to your computer - it offers reliable, fast connection but limits mobility. Wireless setup connects your printer to your WiFi network, allowing printing from any device on the network including smartphones and tablets, though it requires stable WiFi connectivity.",
     },
     {
-      question: "How often should I clean my printer?",
-      answer: "For regular home use, clean your printer every 1-2 months. This includes running the built-in cleaning function for print heads and physically cleaning paper rollers and exterior surfaces. Heavy office use may require more frequent cleaning.",
+      question: "How often should I perform printer maintenance?",
+      answer: "For regular home use, perform basic maintenance every 1-2 months. This includes running the built-in print head cleaning utility, checking and cleaning paper feed rollers, and dusting the exterior. For heavy office use, monthly maintenance is recommended. Always follow your printer manual for specific maintenance guidelines.",
     },
     {
-      question: "Why is my printer printing blank pages?",
-      answer: "Blank pages can be caused by: empty ink/toner cartridges, clogged print heads, incorrect paper settings, or driver issues. First check ink levels, then run a print head cleaning cycle. If the problem persists, reinstall the printer driver.",
+      question: "Why does my printer print blank pages?",
+      answer: "Blank pages typically occur due to: empty ink or toner cartridges, clogged print heads (common in inkjet printers), incorrect paper size settings in print dialog, or driver communication issues. Start by checking ink levels, then run a print head cleaning cycle, verify paper settings, and if needed, reinstall the printer driver.",
     },
     {
-      question: "How do I print from my smartphone?",
-      answer: "Most modern printers support mobile printing. For Android, use the manufacturer's app or Google Cloud Print. For iPhone, look for AirPrint compatibility. Alternatively, you can email documents to your printer if it has an email printing feature.",
+      question: "How can I print documents from my smartphone?",
+      answer: "Most modern printers support mobile printing. For Android devices, use the manufacturer's official app or Google Cloud Print service. For iPhones and iPads, look for AirPrint-compatible printers which allow direct printing. Many printers also support email printing - send documents to your printer's email address to print remotely.",
     },
     {
-      question: "What paper size settings should I use?",
-      answer: "Always match the paper size setting in your print dialog to the actual paper loaded in the tray. Common sizes are A4 (most countries), Letter (US), and Legal. Using mismatched settings can cause printing errors or paper jams.",
+      question: "What paper sizes are commonly used for printing?",
+      answer: "The most common paper sizes are: A4 (210 × 297mm) used in most countries, Letter (8.5 × 11 inches) used in US and Canada, Legal (8.5 × 14 inches) for legal documents, and A3 (297 × 420mm) for larger prints. Always ensure your print settings match the paper loaded in your printer tray to avoid errors.",
     },
     {
-      question: "How do I set my printer as the default?",
-      answer: "On Windows: Settings > Devices > Printers & Scanners > Select your printer > Manage > Set as default. On Mac: System Preferences > Printers & Scanners > Right-click your printer > Set Default Printer.",
+      question: "How do I set a printer as my default printing device?",
+      answer: "On Windows: Open Settings > Devices > Printers & Scanners, select your printer, click Manage, then Set as Default. On Mac: Open System Preferences > Printers & Scanners, right-click your printer and select Set Default Printer. This ensures your preferred printer is automatically selected for all print jobs.",
     },
   ];
 
@@ -45,17 +45,17 @@ const FAQ = () => {
     <section id="faq" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <header className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-primary font-medium text-sm mb-4 bg-primary/10 px-4 py-2 rounded-full">
-            FAQ
+            Knowledge Base
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground text-lg">
-            Find answers to the most common questions about printer setup and maintenance.
+            Get answers to the most common questions about printer installation, configuration, and maintenance.
           </p>
-        </div>
+        </header>
 
         {/* FAQ Accordion */}
         <div className="max-w-3xl mx-auto">

@@ -1,11 +1,11 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const features = [
-    "Step-by-step setup guides",
-    "Wireless & wired connections",
-    "Troubleshooting solutions",
+    "Step-by-step installation tutorials",
+    "Wireless & USB connection guides",
+    "Beginner-friendly explanations",
   ];
 
   return (
@@ -13,29 +13,29 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-10rem)]">
           {/* Left Content */}
-          <div className="space-y-8 animate-fade-up">
+          <article className="space-y-8 animate-fade-up">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-              Educational Resource
+              <GraduationCap className="w-4 h-4" />
+              Free Educational Resource
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Complete{" "}
+              Learn{" "}
               <span className="text-gradient">Printer Setup</span>
-              {" "}Guide for Everyone
+              {" "}Step by Step
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Learn how to set up, configure, and troubleshoot any printer with our comprehensive educational guides. Perfect for students, teachers, and IT beginners.
+              Master printer installation, configuration, and maintenance with our comprehensive educational guides. Designed for students, teachers, and IT beginners who want to learn at their own pace.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="gradient-primary text-primary-foreground shadow-card hover:shadow-hover transition-all duration-300 group">
-                Start Learning
+                Start Learning Now
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button size="lg" variant="outline" className="border-2 hover:bg-secondary transition-colors">
-                Watch Tutorial
+                Watch Video Tutorial
               </Button>
             </div>
 
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </article>
 
           {/* Right Content - Illustration */}
           <div className="relative flex justify-center lg:justify-end">
@@ -58,7 +58,7 @@ const HeroSection = () => {
               {/* Main printer illustration card */}
               <div className="relative bg-card rounded-3xl p-8 shadow-card border border-border animate-float">
                 <div className="aspect-square bg-secondary rounded-2xl flex items-center justify-center mb-6">
-                  <svg viewBox="0 0 200 200" className="w-full h-full p-8">
+                  <svg viewBox="0 0 200 200" className="w-full h-full p-8" aria-label="Printer illustration">
                     {/* Printer Body */}
                     <rect x="30" y="70" width="140" height="80" rx="8" fill="hsl(var(--muted))" stroke="hsl(var(--border))" strokeWidth="2"/>
                     {/* Paper Tray */}
@@ -89,10 +89,10 @@ const HeroSection = () => {
 
               {/* Floating badges */}
               <div className="absolute -top-4 -left-4 bg-card px-4 py-2 rounded-xl shadow-soft border border-border">
-                <span className="text-sm font-medium text-foreground">✨ Easy Setup</span>
+                <span className="text-sm font-medium text-foreground">✨ Easy to Learn</span>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-card px-4 py-2 rounded-xl shadow-soft border border-border">
-                <span className="text-sm font-medium text-foreground">🎓 For Education</span>
+                <span className="text-sm font-medium text-foreground">🎓 100% Free</span>
               </div>
             </div>
           </div>

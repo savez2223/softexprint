@@ -1,22 +1,22 @@
-import { Printer, Heart } from "lucide-react";
+import { Printer, Heart, GraduationCap } from "lucide-react";
 
 const Footer = () => {
   const links = {
-    guides: [
-      "USB Setup",
-      "Wireless Setup",
+    tutorials: [
+      "USB Printer Setup",
+      "Wireless Configuration",
       "Network Printing",
       "Mobile Printing",
     ],
-    support: [
-      "Troubleshooting",
-      "FAQ",
-      "Contact Us",
-      "Community Forum",
+    learning: [
+      "Beginner Guide",
+      "Video Tutorials",
+      "FAQ Section",
+      "Quick Reference",
     ],
     resources: [
-      "Video Tutorials",
-      "Documentation",
+      "Driver Installation",
+      "Maintenance Tips",
       "Glossary",
       "Best Practices",
     ],
@@ -34,16 +34,20 @@ const Footer = () => {
               </div>
               <span className="font-bold text-xl">PrinterHelp</span>
             </a>
-            <p className="text-background/70 text-sm leading-relaxed">
-              Your comprehensive educational resource for printer setup, configuration, and troubleshooting. Learn at your own pace.
+            <p className="text-background/70 text-sm leading-relaxed mb-4">
+              Your comprehensive educational resource for learning printer setup, configuration, and maintenance. Free tutorials for students and beginners.
             </p>
+            <div className="flex items-center gap-2 text-sm text-background/70">
+              <GraduationCap className="w-4 h-4" />
+              <span>Educational Purpose Only</span>
+            </div>
           </div>
 
-          {/* Setup Guides */}
-          <div>
-            <h4 className="font-semibold mb-4">Setup Guides</h4>
+          {/* Tutorials */}
+          <nav aria-label="Tutorials">
+            <h4 className="font-semibold mb-4">Tutorials</h4>
             <ul className="space-y-2">
-              {links.guides.map((link, index) => (
+              {links.tutorials.map((link, index) => (
                 <li key={index}>
                   <a href="#setup" className="text-background/70 hover:text-background transition-colors text-sm">
                     {link}
@@ -51,24 +55,24 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
-          {/* Support */}
-          <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+          {/* Learning */}
+          <nav aria-label="Learning">
+            <h4 className="font-semibold mb-4">Learning</h4>
             <ul className="space-y-2">
-              {links.support.map((link, index) => (
+              {links.learning.map((link, index) => (
                 <li key={index}>
-                  <a href="#support" className="text-background/70 hover:text-background transition-colors text-sm">
+                  <a href="#resources" className="text-background/70 hover:text-background transition-colors text-sm">
                     {link}
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Resources */}
-          <div>
+          <nav aria-label="Resources">
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               {links.resources.map((link, index) => (
@@ -79,13 +83,13 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-background/70 text-sm">
-            © 2024 PrinterHelp. Educational purposes only.
+            © 2024 PrinterHelp. Free educational resource for learning.
           </p>
           <p className="text-background/70 text-sm flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-red-400 fill-red-400" /> for students and learners

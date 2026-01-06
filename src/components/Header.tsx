@@ -8,9 +8,9 @@ const Header = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Setup Guide", href: "#setup" },
-    { name: "Troubleshoot", href: "#troubleshoot" },
+    { name: "Common Issues", href: "#solutions" },
     { name: "FAQ", href: "#faq" },
-    { name: "Support", href: "#support" },
+    { name: "Resources", href: "#resources" },
   ];
 
   return (
@@ -41,7 +41,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="gradient-primary text-primary-foreground shadow-card hover:shadow-hover transition-all duration-300">
-              Get Started
+              Start Learning
             </Button>
           </div>
 
@@ -49,6 +49,7 @@ const Header = () => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-foreground"
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -56,8 +57,8 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-up">
-            <nav className="flex flex-col gap-4">
+          <nav className="md:hidden py-4 border-t border-border animate-fade-up">
+            <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -69,10 +70,10 @@ const Header = () => {
                 </a>
               ))}
               <Button className="gradient-primary text-primary-foreground mt-2 w-full">
-                Get Started
+                Start Learning
               </Button>
-            </nav>
-          </div>
+            </div>
+          </nav>
         )}
       </div>
     </header>

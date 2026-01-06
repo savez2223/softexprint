@@ -6,73 +6,73 @@ const SetupGuide = () => {
     {
       icon: <Download className="w-6 h-6" />,
       step: "01",
-      title: "Download Drivers",
-      description: "Visit the manufacturer's website and download the latest printer drivers for your operating system.",
+      title: "Download Printer Drivers",
+      description: "Learn how to find and download the correct printer drivers from the manufacturer website for your operating system.",
       details: [
-        "Go to manufacturer support page",
-        "Select your printer model",
+        "Visit manufacturer official website",
+        "Navigate to drivers/downloads section",
+        "Select your printer model number",
         "Choose your OS (Windows/Mac/Linux)",
-        "Download the driver package",
       ],
     },
     {
       icon: <Cable className="w-6 h-6" />,
       step: "02",
-      title: "Connect Printer",
-      description: "Connect your printer to the computer using USB cable or set up wireless connection.",
+      title: "Connect Your Printer",
+      description: "Understand how to physically connect your printer using USB cable or prepare for wireless setup.",
       details: [
-        "For USB: Connect cable to PC & printer",
-        "For Wireless: Enable WiFi on printer",
-        "Press WPS button if available",
-        "Wait for connection confirmation",
+        "USB: Connect cable to PC and printer",
+        "Wireless: Power on and enable WiFi mode",
+        "Locate the WPS button on printer",
+        "Ensure printer shows connection light",
       ],
     },
     {
       icon: <Settings className="w-6 h-6" />,
       step: "03",
-      title: "Install Software",
-      description: "Run the downloaded driver installer and follow the on-screen setup wizard.",
+      title: "Install Driver Software",
+      description: "Step-by-step process to run the driver installer and complete the software installation wizard.",
       details: [
-        "Run the installer file",
-        "Accept license agreement",
-        "Choose installation type",
-        "Complete the wizard",
+        "Run the downloaded installer file",
+        "Accept the license agreement",
+        "Select installation type (typical/custom)",
+        "Follow on-screen instructions",
       ],
     },
     {
       icon: <Wifi className="w-6 h-6" />,
       step: "04",
-      title: "Configure Network",
-      description: "For wireless printers, connect to your home or office WiFi network.",
+      title: "Configure Network Settings",
+      description: "Learn to connect wireless printers to your home or office WiFi network for remote printing.",
       details: [
-        "Access printer control panel",
-        "Go to Network Settings",
-        "Select your WiFi network",
-        "Enter WiFi password",
+        "Access printer control panel menu",
+        "Navigate to Network/WiFi Settings",
+        "Search and select your network",
+        "Enter WiFi password correctly",
       ],
     },
     {
       icon: <Monitor className="w-6 h-6" />,
       step: "05",
-      title: "Add to System",
-      description: "Add the printer to your computer's list of available printers.",
+      title: "Add Printer to Computer",
+      description: "How to add the installed printer to your computer system for easy access and printing.",
       details: [
         "Open Settings > Devices > Printers",
-        "Click 'Add Printer'",
-        "Select your printer from list",
-        "Set as default if needed",
+        "Click Add a Printer option",
+        "Select your printer from the list",
+        "Set as default printer if needed",
       ],
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
       step: "06",
-      title: "Test Print",
-      description: "Print a test page to verify everything is working correctly.",
+      title: "Print a Test Page",
+      description: "Verify your printer setup by printing a test page to ensure everything works correctly.",
       details: [
-        "Right-click on printer",
-        "Select 'Print Test Page'",
-        "Check print quality",
-        "Setup complete!",
+        "Right-click on your printer icon",
+        "Select Print Test Page option",
+        "Check print quality and alignment",
+        "Installation complete!",
       ],
     },
   ];
@@ -81,17 +81,17 @@ const SetupGuide = () => {
     <section id="setup" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <header className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-primary font-medium text-sm mb-4 bg-primary/10 px-4 py-2 rounded-full">
-            Step-by-Step Guide
+            Complete Tutorial
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            How to Setup Your Printer
+            How to Install a Printer: Complete Guide
           </h2>
           <p className="text-muted-foreground text-lg">
-            Follow these simple steps to install and configure your printer on any computer.
+            Follow these 6 simple steps to learn printer installation from start to finish. Each step includes detailed instructions for beginners.
           </p>
-        </div>
+        </header>
 
         {/* Steps Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -111,7 +111,7 @@ const SetupGuide = () => {
               </div>
               
               {/* Content */}
-              <div className="relative">
+              <article className="relative">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                     STEP {step.step}
@@ -133,7 +133,7 @@ const SetupGuide = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </article>
             </Card>
           ))}
         </div>
