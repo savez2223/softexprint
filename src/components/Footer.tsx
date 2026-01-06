@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-background/70 text-sm">
-            © 2024 PrinterHelp. Free educational resource for learning.
+            © 2024 Softexprint. Free educational resource for learning.
           </p>
           <p className="text-background/70 text-sm flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-red-400 fill-red-400" /> for students and learners
