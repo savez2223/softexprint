@@ -4,6 +4,7 @@ import SetupGuide from "@/components/SetupGuide";
 import CommonSolutions from "@/components/CommonSolutions";
 import FAQ from "@/components/FAQ";
 import Resources from "@/components/Resources";
+import Disclaimer from "@/components/Disclaimer";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
         <CommonSolutions />
         <FAQ />
         <Resources />
+        <Disclaimer />
       </main>
       <Footer />
     </div>
